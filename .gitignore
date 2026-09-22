@@ -1,8 +1,37 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Build output
+bin/
+obj/
+Debug/
+Release/
+out/
 
-# msbuild output directories
-/bin
-/obj
+# Solution packaging artifacts
+*.zip
 
-# MSBuild Binary and Structured Log
-*.binlog
+# PCF generated files
+generated/
+node_modules/
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.local
+
+# IDE / editor
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
